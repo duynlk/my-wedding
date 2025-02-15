@@ -145,9 +145,8 @@
                 dataType: "json",
                 accepts: 'application/json',
                 async: true
-                // success: (data) => console.log(data),
-                // error: (err) => console.log(err)
             });
+
             $('#submit-thank').show(500);
             setTimeout(function(){
                 $('#rsvpModal').modal('hide');
