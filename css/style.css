@@ -9764,11 +9764,26 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#btn-sound {
-  width: 45px;
+#btn-left {
   position: fixed;
   left: 20px;
   bottom: 20px;
+  z-index: 998;
+  background-color: white;
+  border-radius: 24px;
+  padding-right: 14px;
+  padding-left: 50px;
+  line-height: 43px;
+  border: 1px solid red;
+  height: 45px;
+  display: none;
+}
+
+#btn-sound {
+  width: 45px;
   cursor: pointer;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
   z-index: 999;
 }

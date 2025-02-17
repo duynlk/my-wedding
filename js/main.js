@@ -2,6 +2,10 @@
     "use strict";
 
     var isShowRsvp = false;
+    $('#btn-left').animate({width:'toggle'},1000);
+    setTimeout(function(){
+        $('#btn-left').animate({width:'toggle'},500);
+    }, 5000);
 
     // Scroll to Bottom
     $(window).scroll(function () {
