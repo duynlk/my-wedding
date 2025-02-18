@@ -6,6 +6,10 @@
         $('#btn-left').animate({width:'toggle'},1000);
     }, 2000);
 
+    $(document).on("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
     // Scroll to Bottom
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
