@@ -4,11 +4,7 @@
     var isShowRsvp = false;
     setTimeout(function(){
         $('#btn-left').animate({width:'toggle'},1000);
-
-        setTimeout(function(){
-            $('#btn-left').animate({width:'toggle'},1000);
-        }, 5000);
-    }, 3000);
+    }, 2000);
 
     // Scroll to Bottom
     $(window).scroll(function () {
@@ -70,14 +66,19 @@
     });
 
     // click audio
-    $("#btn-sound").click(function () {
-        var src = $(this).prop("src");
+    var isToggle = false;
+    $("#btn-sound, #btn-left").click(function () {
+        var src = $("#btn-sound").prop("src");
         if(src.includes("sound.png")){
             $('#player').trigger("pause");
-            $(this).prop("src","img/mute.png");
+            $("#btn-sound").prop("src","img/mute.png");
         }else{
+            if(!isToggle){
+                $('#btn-left').animate({width:'toggle'},1000);
+                isToggle = true;
+            }
             $('#player').trigger("play");
-            $(this).prop("src","img/sound.png");
+            $("#btn-sound").prop("src","img/sound.png");
         }
     });
 

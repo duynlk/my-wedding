@@ -9777,6 +9777,7 @@ a.text-dark:hover, a.text-dark:focus {
   border: 1px solid red;
   height: 45px;
   display: none;
+  cursor: pointer;
 }
 
 #btn-sound {
