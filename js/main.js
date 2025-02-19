@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    var isShowRsvp = false;
+    var isShowRsvp = true;
     setTimeout(function(){
         $('#btn-left').animate({width:'toggle'},1000);
     }, 2000);
@@ -165,4 +165,20 @@
             }, 2000);
         }
     });
+
+    function startMarquee() {
+        var textWidth = $("#marquee-text").width();
+        var containerWidth = $("#marquee-container").width();
+        
+        $("#marquee-text").css({ left: containerWidth });
+
+        $("#marquee-text").animate(
+            { left: -textWidth },
+            35000,
+            "linear",
+            startMarquee
+        );
+    }
+
+    startMarquee();
 })(jQuery);
