@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    var isShowRsvp = true;
+    var isShowRsvp = false;
     setTimeout(function(){
         $('#btn-left').animate({width:'toggle'},1000);
     }, 2000);
