@@ -1,13 +1,19 @@
 (function ($) {
     "use strict";
 
-    var isShowRsvp = false;
     setTimeout(function(){
         $('#btn-left').animate({width:'toggle'},1000);
     }, 2000);
 
     $(document).on("contextmenu", function(e) {
         e.preventDefault();
+    });
+
+    var isShowRsvp = false;
+
+    $("#btn-inbox").click(function () {
+        $('#rsvpModal').modal('show');
+        isShowRsvp = true;
     });
 
     // Scroll to Bottom

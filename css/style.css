@@ -9781,6 +9781,15 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: pointer;
 }
 
+#btn-inbox {
+  width: 45px;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  bottom: 75px;
+  z-index: 999;
+}
+
 #btn-sound {
   width: 45px;
   cursor: pointer;
