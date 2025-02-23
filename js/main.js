@@ -129,12 +129,6 @@
         var msgRsvp = $('#msgRsvp').val();
         var isSubmit = true;
 
-        if (commitRsvp == '#'){
-            $('#commitRsvp').removeClass('border-0')
-            $('#commitRsvp').css('border', '1px solid #E47A2E');
-            isSubmit = false;
-        }
-
         if (nameRsvp == ''){
             $('#nameRsvp').removeClass('border-0')
             $('#nameRsvp').css('border', '1px solid #E47A2E');
@@ -148,9 +142,11 @@
         }
 
         if (isSubmit){
-            var commitText = 'Tất nhiên rồi!';
+            var commitText = 'N/A';
             if(commitRsvp == '0'){
                 commitText = 'Thật tiếc, mình không đến được';
+            }else if(commitRsvp == '1'){
+                commitText = 'Tất nhiên rồi!';
             }
 
             $.ajax({
