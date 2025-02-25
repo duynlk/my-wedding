@@ -28,6 +28,7 @@
             if (!isShowRsvp){
                 $('#rsvpModal').modal('show');
                 isShowRsvp = true;
+                $('#btn-inbox').fadeIn('slow');
             }
         }
     });
