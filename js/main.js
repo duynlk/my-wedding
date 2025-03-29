@@ -177,7 +177,7 @@
 
         $("#marquee-text").animate(
             { left: -textWidth },
-            35000,
+            60000,
             "linear",
             startMarquee
         );
